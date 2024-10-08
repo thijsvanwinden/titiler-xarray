@@ -385,6 +385,7 @@ class ZarrTilerFactory(BaseTilerFactory):
                 group=group,
                 reference=reference,
                 decode_times=decode_times,
+                drop_dim=drop_dim,
                 tms=tms,
                 consolidated=consolidated,
             ) as src_dst:
