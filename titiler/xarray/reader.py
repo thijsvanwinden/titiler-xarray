@@ -159,9 +159,9 @@ def arrange_coordinates(da: xarray.DataArray) -> xarray.DataArray:
             longitude_var_name = "longitude"
         da = da.rename({latitude_var_name: "y", longitude_var_name: "x"})
     if "time" in da.dims:
-        da = da.transpose("time", "y", "x")
+        da = da.transpose(..., "time", "y", "x")
     else:
-        da = da.transpose("y", "x")
+        da = da.transpose(..., "y", "x")
     return da
 
 
