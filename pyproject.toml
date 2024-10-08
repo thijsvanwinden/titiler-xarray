@@ -37,12 +37,10 @@ dependencies = [
     "aiohttp",
     "requests",
     "pydantic==2.0.2",
-    "titiler.core>=0.14.1,<0.15",
+    "titiler.core>=0.15,<=0.18.9",
     "pydantic-settings~=2.0",
     "pandas==1.5.3",
-    "redis",
-    "fastapi>=0.100.0,<0.107.0",
-    "starlette<0.28",
+    "redis"
 ]
 
 [project.optional-dependencies]
